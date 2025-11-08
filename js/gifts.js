@@ -31,7 +31,10 @@ async function FindGift(status){
     Familia: FamilyLista,
   },
   inputPlaceholder: "Selecciona un nombre",
-  showCancelButton: true,
+  confirmButtonText: "Buscar",
+  cancelButtonText: "Cancelar",
+  confirmButtonColor: "#3085d6",
+  cancelButtonColor: "#d33",
   inputValidator: (value) => {
     return new Promise((resolve) => {
       if (FamilyLista.hasOwnProperty(value)) {        
@@ -432,5 +435,6 @@ if (status=="si") {
 }
 
 }
+
 
 
